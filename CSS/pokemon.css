@@ -1,0 +1,72 @@
+body{
+    background-color: antiquewhite;
+}
+
+/*Estos elementos son del buscador*/
+
+form{
+    width: 210px;
+    margin: 25px auto;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10%;
+    border: solid 3px black;
+}
+.poke-card{
+    position: relative;
+    height: fit-content;
+    max-width: 400px;
+    border-radius: 5%;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    border: solid 3px black;
+}
+.poke-card::before{
+    content: '';
+    background: radial-gradient(black 33%, transparent 40%);
+    background-size: 4px 4px;
+    border-radius: 5%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: -1;
+}
+
+/*Estos elementos son de la tabla*/
+
+.btn{
+    padding: 10px;
+    position: relative ;
+    border:solid 3px black;
+    border-radius: 10%;
+    transition: 0.8s;
+    /*position: absolute;*/
+}
+.btn:hover{
+    opacity: 80%;
+    background-color: blueviolet;
+    border: solid 3px black;
+}
+#contenedor{
+    height: fit-content;
+    padding: 3% 0;
+    display: grid;
+}
+.pokemones{
+    border:solid 2px black;
+    padding: 2px 5px;
+    content: '';
+    background: radial-gradient(#A9A9A9 13%, transparent 60%);
+    border-radius: 5%;
+    text-align: center;
+}
+h3{
+    font-size: 35px;
+}
